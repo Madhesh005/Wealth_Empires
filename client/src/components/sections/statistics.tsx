@@ -24,7 +24,7 @@ const Statistics = () => {
   }, [startCount, hasStarted]);
 
   const stats = [
-    { value: 940085, label: "Wealth Created (INR)", suffix: "" },
+    { value: 1000090, label: "Wealth Created (INR)", suffix: "" },
     { value: 290900, label: "Tax Saved (INR)", suffix: "" },
     { value: 16, label: "Happy Clients", suffix: "" },
     { value: 25, label: "Dedicated Professionals", suffix: "" },

@@ -12,7 +12,6 @@ const Header = () => {
     { name: "About", href: "/about" },
     { name: "Careers", href: "/careers" },
     { name: "Partners", href: "/partners" },
-    { name: "Blogs", href: "/blogs" },
   ];
 
   const services = [
@@ -78,18 +77,7 @@ const Header = () => {
               </Link>
             ))}
 
-            <Button
-              asChild
-              className="bg-wealth-gold hover:bg-wealth-amber text-white font-medium"
-            >
-              <a
-                href="https://api.whatsapp.com/send?phone=919884521264"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Started
-              </a>
-            </Button>
+
           </div>
 
           {/* Mobile menu button */}

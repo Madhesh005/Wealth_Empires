@@ -18,7 +18,7 @@ const ServiceCard = ({ icon: Icon, title, description, link, linkText }: Service
       <p className="text-wealth-slate mb-6">{description}</p>
       <a
         href={link}
-        className="text-wealth-gold font-semibold hover:text-wealth-amber inline-flex items-center space-x-2 transition-colors"
+        className="inline-flex items-center space-x-2 text-wealth-gold font-semibold hover:text-wealth-amber transition-colors"
       >
         <span>{linkText}</span>
         <ArrowRight className="w-4 h-4" />
