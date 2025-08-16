@@ -196,12 +196,7 @@ const Partners = () => {
                     <strong>Collaborative Support:</strong> We work closely with our partners to ensure success through ongoing support and collaboration.
                   </p>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <TrendingUp className="w-6 h-6 text-wealth-gold flex-shrink-0 mt-1" />
-                  <p className="text-wealth-slate">
-                    <strong>Proven Results:</strong> Our partnership model has helped create significant value, with ₹940,085+ in wealth created for clients.
-                  </p>
-                </div>
+
               </div>
             </div>
             

@@ -1,0 +1,655 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Empires - Your Financial Growth Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'wealth-yellow': '#FEF3C7',
+                        'wealth-gold': '#F59E0B',
+                        'wealth-amber': '#D97706',
+                        'wealth-blue': '#1E293B',
+                        'wealth-slate': '#334155',
+                        'wealth-cream': '#FEFCE8',
+                        'wealth-light-cream': '#FFFBEB'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #FEFCE8 0%, #FEF3C7 50%, #FFFBEB 100%);
+        }
+        .counter {
+            transition: all 0.3s ease;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .nav-dropdown {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .nav-item:hover .nav-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-inter bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-wealth-blue">
+                        <span class="text-wealth-gold">Wealth</span> Empires
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="nav-item relative">
+                        <button class="text-wealth-slate hover:text-wealth-gold font-medium flex items-center space-x-1">
+                            <span>Services</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="nav-dropdown absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-100 p-4">
+                            <a href="#" class="block px-3 py-2 text-sm text-wealth-slate hover:text-wealth-gold hover:bg-wealth-light-cream rounded">Incorporation</a>
+                            <a href="#" class="block px-3 py-2 text-sm text-wealth-slate hover:text-wealth-gold hover:bg-wealth-light-cream rounded">Accounting & Bookkeeping</a>
+                            <a href="#" class="block px-3 py-2 text-sm text-wealth-slate hover:text-wealth-gold hover:bg-wealth-light-cream rounded">GST Compliance</a>
+                            <a href="#" class="block px-3 py-2 text-sm text-wealth-slate hover:text-wealth-gold hover:bg-wealth-light-cream rounded">Trademark & Licensing</a>
+                        </div>
+                    </div>
+                    <a href="#about" class="text-wealth-slate hover:text-wealth-gold font-medium">About</a>
+                    <a href="#careers" class="text-wealth-slate hover:text-wealth-gold font-medium">Careers</a>
+                    <a href="#partners" class="text-wealth-slate hover:text-wealth-gold font-medium">Partners</a>
+                    <a href="#blogs" class="text-wealth-slate hover:text-wealth-gold font-medium">Blogs</a>
+                    <a href="https://api.whatsapp.com/send?phone=919884521264" class="bg-wealth-gold hover:bg-wealth-amber text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-wealth-slate hover:text-wealth-gold">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-2">
+                        <p class="text-wealth-amber font-semibold text-lg">Business-in-a-Box™</p>
+                        <h1 class="text-5xl lg:text-6xl font-bold text-wealth-blue leading-tight">
+                            Wealth Empires is for <span class="text-wealth-gold">Growth</span>.
+                        </h1>
+                    </div>
+                    <p class="text-xl text-wealth-slate leading-relaxed">
+                        Incorporation, Accounting, GST Compliance, and Trademark Services—one platform, one point of contact, zero stress for your business growth in India.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://api.whatsapp.com/send?phone=919884521264" class="bg-wealth-blue hover:bg-wealth-slate text-white px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center justify-center space-x-2 transition-colors">
+                            <span>Get Free Consultation</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="tel:+919884521264" class="border-2 border-wealth-blue text-wealth-blue hover:bg-wealth-blue hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                            Call Us Now
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-4 text-sm text-wealth-slate">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-star text-wealth-gold"></i>
+                            <span>4.9/5 Client Rating</span>
+                        </div>
+                        <div class="h-4 w-px bg-wealth-slate"></div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-users text-wealth-gold"></i>
+                            <span>940,085+ INR Wealth Created</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Professional business consultant in modern office setting -->
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" alt="Professional financial consultant" class="rounded-2xl shadow-2xl w-full h-auto" />
+                    <div class="absolute -bottom-8 -left-8 bg-white rounded-xl shadow-lg p-6 max-w-xs">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-wealth-gold rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-wealth-blue">Business Registered</p>
+                                <p class="text-sm text-wealth-slate">In 24 hours or less</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center counter">
+                    <div class="text-4xl lg:text-5xl font-bold text-wealth-gold mb-2">940,085</div>
+                    <p class="text-wealth-slate font-medium">Wealth Created (INR)</p>
+                </div>
+                <div class="text-center counter">
+                    <div class="text-4xl lg:text-5xl font-bold text-wealth-gold mb-2">290,900</div>
+                    <p class="text-wealth-slate font-medium">Tax Saved (INR)</p>
+                </div>
+                <div class="text-center counter">
+                    <div class="text-4xl lg:text-5xl font-bold text-wealth-gold mb-2">16</div>
+                    <p class="text-wealth-slate font-medium">Happy Clients</p>
+                </div>
+                <div class="text-center counter">
+                    <div class="text-4xl lg:text-5xl font-bold text-wealth-gold mb-2">25</div>
+                    <p class="text-wealth-slate font-medium">Dedicated Professionals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-wealth-light-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <p class="text-wealth-amber font-semibold text-lg">Service Suite</p>
+                <h2 class="text-4xl lg:text-5xl font-bold text-wealth-blue">Your Business. Simplified.</h2>
+                <p class="text-xl text-wealth-slate max-w-3xl mx-auto">Each service is powerful on its own, but together? Game-changing for your business growth.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg hover:shadow-xl">
+                    <div class="w-16 h-16 bg-wealth-yellow rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-building text-wealth-gold text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-wealth-blue mb-4">Business Incorporation</h3>
+                    <p class="text-wealth-slate mb-6">Skip the paperwork. We set up your business so you can start selling faster.</p>
+                    <a href="#" class="text-wealth-gold font-semibold hover:text-wealth-amber inline-flex items-center space-x-2">
+                        <span>Start Your Business</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg hover:shadow-xl">
+                    <div class="w-16 h-16 bg-wealth-yellow rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-calculator text-wealth-gold text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-wealth-blue mb-4">Smart Accounting</h3>
+                    <p class="text-wealth-slate mb-6">No spreadsheets, no hassle, just real-time financial insights for your business.</p>
+                    <a href="#" class="text-wealth-gold font-semibold hover:text-wealth-amber inline-flex items-center space-x-2">
+                        <span>Track Your Books</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg hover:shadow-xl">
+                    <div class="w-16 h-16 bg-wealth-yellow rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-file-invoice text-wealth-gold text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-wealth-blue mb-4">GST Compliance</h3>
+                    <p class="text-wealth-slate mb-6">Stay compliant, save time, and never stress about GST filing again.</p>
+                    <a href="#" class="text-wealth-gold font-semibold hover:text-wealth-amber inline-flex items-center space-x-2">
+                        <span>File Your GST</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg hover:shadow-xl">
+                    <div class="w-16 h-16 bg-wealth-yellow rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-trademark text-wealth-gold text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-wealth-blue mb-4">Trademark Protection</h3>
+                    <p class="text-wealth-slate mb-6">Secure your brand's future with comprehensive trademark protection services.</p>
+                    <a href="#" class="text-wealth-gold font-semibold hover:text-wealth-amber inline-flex items-center space-x-2">
+                        <span>Protect Your Brand</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-wealth-blue rounded-2xl p-8 lg:p-12 text-center">
+                <h3 class="text-3xl font-bold text-white mb-4">Business-in-a-Box™</h3>
+                <p class="text-wealth-yellow text-lg mb-8 max-w-3xl mx-auto">Everything you need—Incorporation, Accounting, GST Compliance, and Trademark—bundled to save you time & money.</p>
+                <a href="https://api.whatsapp.com/send?phone=919884521264" class="bg-wealth-gold hover:bg-wealth-amber text-wealth-blue px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center space-x-2 transition-colors">
+                    <span>View Our Packages</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="space-y-4">
+                        <p class="text-wealth-amber font-semibold text-lg">About Wealth Empires</p>
+                        <h2 class="text-4xl lg:text-5xl font-bold text-wealth-blue">We Help You To Grow Your Business</h2>
+                    </div>
+                    <p class="text-xl text-wealth-slate leading-relaxed">
+                        Elevate your business with customized financial strategies designed for growth. Discover unparalleled success through the expert guidance and innovative solutions at Wealth Empires.
+                    </p>
+                    <div class="space-y-4">
+                        <p class="text-wealth-slate">Our journey is defined by our commitment to delivering exceptional value and transformative results for businesses. By focusing on tailored solutions, we guide our clients toward achieving their most ambitious goals.</p>
+                        <p class="text-wealth-slate">We envision Wealth Empires as a leader in reshaping the future of financial services, setting new benchmarks for excellence and innovation.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-wealth-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-clock text-wealth-gold text-2xl"></i>
+                            </div>
+                            <h4 class="font-bold text-wealth-blue mb-2">24/7 Available</h4>
+                            <p class="text-sm text-wealth-slate">Anytime assistance for your business needs</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-wealth-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-hand-holding-dollar text-wealth-gold text-2xl"></i>
+                            </div>
+                            <h4 class="font-bold text-wealth-blue mb-2">No Hidden Charges</h4>
+                            <p class="text-sm text-wealth-slate">Transparent pricing, just transparent</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-wealth-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-users text-wealth-gold text-2xl"></i>
+                            </div>
+                            <h4 class="font-bold text-wealth-blue mb-2">Dedicated Team</h4>
+                            <p class="text-sm text-wealth-slate">A team devoted to your success</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Modern Chennai office building with business professionals -->
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" alt="Modern office Chennai" class="rounded-2xl shadow-2xl w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-wealth-light-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <p class="text-wealth-amber font-semibold text-lg">Why Choosing Us!</p>
+                <h2 class="text-4xl lg:text-5xl font-bold text-wealth-blue">Few Reasons Why People Are Choosing Us!</h2>
+                <p class="text-xl text-wealth-slate max-w-4xl mx-auto">At Wealth Empires, we stand out for our innovative approach to financial solutions and our unwavering dedication to client success. Our expert team delivers customized strategies that drive meaningful growth and achieve exceptional results.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg text-center">
+                    <div class="w-20 h-20 bg-wealth-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bolt text-wealth-gold text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-wealth-blue mb-4">Fast Executions</h3>
+                    <p class="text-wealth-slate mb-6">Fast and precise execution to accelerate your financial success and business growth.</p>
+                    <a href="https://api.whatsapp.com/send?phone=919884521264" class="text-wealth-gold font-semibold hover:text-wealth-amber">Contact Us →</a>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg text-center">
+                    <div class="w-20 h-20 bg-wealth-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-tie text-wealth-gold text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-wealth-blue mb-4">Personalized Services</h3>
+                    <p class="text-wealth-slate mb-6">Targeted financial solutions designed specifically for your company's unique growth needs.</p>
+                    <a href="https://api.whatsapp.com/send?phone=919884521264" class="text-wealth-gold font-semibold hover:text-wealth-amber">Connect Us →</a>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg text-center">
+                    <div class="w-20 h-20 bg-wealth-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-wealth-gold text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-wealth-blue mb-4">Data Security</h3>
+                    <p class="text-wealth-slate mb-6">Secure data handling practices for the protection of your sensitive business information.</p>
+                    <a href="https://api.whatsapp.com/send?phone=919884521264" class="text-wealth-gold font-semibold hover:text-wealth-amber">Reach Us →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <p class="text-wealth-amber font-semibold text-lg">16+ Clients</p>
+                <h2 class="text-4xl lg:text-5xl font-bold text-wealth-blue">Built for Business. Loved by Founders.</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-wealth-light-cream rounded-xl p-8">
+                    <!-- Business professional headshot for testimonial -->
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150" alt="Client testimonial" class="w-16 h-16 rounded-full mb-6" />
+                    <p class="text-wealth-slate mb-6 italic">"Wealth Empires handled our complete business setup and GST compliance so we could focus on growth and delivering great customer experience."</p>
+                    <div>
+                        <h4 class="font-bold text-wealth-blue">Rajesh Kumar</h4>
+                        <p class="text-sm text-wealth-slate">Founder of TechStart Solutions</p>
+                    </div>
+                </div>
+
+                <div class="bg-wealth-light-cream rounded-xl p-8">
+                    <!-- Professional woman business owner -->
+                    <img src="https://pixabay.com/get/g7b6576f379d2d20767263db0cfa91539c43d3bf955ff97174653e8747a70787e51050ccadf61ea7a0d378ee9bd4d4423cca103a264a0adeb40ff73d131a2229b_1280.jpg" alt="Client testimonial" class="w-16 h-16 rounded-full mb-6" />
+                    <p class="text-wealth-slate mb-6 italic">"The ease of setup, combined with their expertise in Indian regulations, helped me get my business running efficiently within weeks."</p>
+                    <div>
+                        <h4 class="font-bold text-wealth-blue">Priya Sharma</h4>
+                        <p class="text-sm text-wealth-slate">CEO at Digital Innovations</p>
+                    </div>
+                </div>
+
+                <div class="bg-wealth-light-cream rounded-xl p-8">
+                    <!-- Young entrepreneur headshot -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150" alt="Client testimonial" class="w-16 h-16 rounded-full mb-6" />
+                    <p class="text-wealth-slate mb-6 italic">"I thought it was very smooth, it was done within 24 hours and all I needed was to provide basic information. Highly recommended!"</p>
+                    <div>
+                        <h4 class="font-bold text-wealth-blue">Arjun Patel</h4>
+                        <p class="text-sm text-wealth-slate">Founder of E-Commerce Venture</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="py-20 bg-wealth-light-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <p class="text-wealth-amber font-semibold text-lg">Careers</p>
+                <h2 class="text-4xl lg:text-5xl font-bold text-wealth-blue">Join Our Growing Team</h2>
+                <p class="text-xl text-wealth-slate max-w-3xl mx-auto">Be part of a team that's reshaping the future of financial services in India. We're looking for passionate professionals to help businesses grow.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-xl font-bold text-wealth-blue mb-4">Senior Financial Consultant</h3>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-wealth-slate"><i class="fas fa-map-marker-alt text-wealth-gold mr-2"></i>Chennai, Tamil Nadu</p>
+                        <p class="text-wealth-slate"><i class="fas fa-briefcase text-wealth-gold mr-2"></i>Full-time</p>
+                        <p class="text-wealth-slate"><i class="fas fa-clock text-wealth-gold mr-2"></i>3+ years experience</p>
+                    </div>
+                    <p class="text-wealth-slate mb-6">Lead client relationships and provide expert financial guidance for business incorporation and compliance services.</p>
+                    <a href="mailto:support@wealthempires.in" class="text-wealth-gold font-semibold hover:text-wealth-amber">Apply Now →</a>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-xl font-bold text-wealth-blue mb-4">GST Compliance Specialist</h3>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-wealth-slate"><i class="fas fa-map-marker-alt text-wealth-gold mr-2"></i>Chennai, Tamil Nadu</p>
+                        <p class="text-wealth-slate"><i class="fas fa-briefcase text-wealth-gold mr-2"></i>Full-time</p>
+                        <p class="text-wealth-slate"><i class="fas fa-clock text-wealth-gold mr-2"></i>2+ years experience</p>
+                    </div>
+                    <p class="text-wealth-slate mb-6">Ensure seamless GST compliance for our clients and provide expert guidance on tax regulations.</p>
+                    <a href="mailto:support@wealthempires.in" class="text-wealth-gold font-semibold hover:text-wealth-amber">Apply Now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <p class="text-wealth-amber font-semibold text-lg">Partnerships</p>
+                <h2 class="text-4xl lg:text-5xl font-bold text-wealth-blue">Partner with Wealth Empires</h2>
+                <p class="text-xl text-wealth-slate max-w-3xl mx-auto">Join our network of trusted partners and help us deliver exceptional financial services to businesses across India.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold text-wealth-blue">Become a Partner</h3>
+                    <p class="text-wealth-slate text-lg">We're always looking for strategic partnerships with:</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-wealth-gold"></i>
+                            <span class="text-wealth-slate">CA firms and financial consultants</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-wealth-gold"></i>
+                            <span class="text-wealth-slate">Legal firms specializing in corporate law</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-wealth-gold"></i>
+                            <span class="text-wealth-slate">Business consultants and advisors</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-wealth-gold"></i>
+                            <span class="text-wealth-slate">Technology platforms and service providers</span>
+                        </li>
+                    </ul>
+                    <a href="mailto:support@wealthempires.in" class="bg-wealth-gold hover:bg-wealth-amber text-white px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center space-x-2 transition-colors">
+                        <span>Contact Partnership Team</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="relative">
+                    <!-- Business partnership handshake in modern office -->
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" alt="Business partnership" class="rounded-2xl shadow-2xl w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blogs" class="py-20 bg-wealth-light-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <p class="text-wealth-amber font-semibold text-lg">Resources</p>
+                <h2 class="text-4xl lg:text-5xl font-bold text-wealth-blue">The Growth Playbook For Entrepreneurs</h2>
+                <p class="text-xl text-wealth-slate max-w-3xl mx-auto">Powerful resources to help you scale smarter and faster in the Indian business landscape.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- Financial documents and reports on desk -->
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=250" alt="Business registration guide" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-wealth-blue mb-3">How to Register Your Business in India</h3>
+                        <p class="text-wealth-slate mb-4">A comprehensive guide to business registration in India, covering all necessary documents and procedures for 2024.</p>
+                        <a href="#" class="text-wealth-gold font-semibold hover:text-wealth-amber">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- GST compliance and tax documents -->
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=250" alt="GST compliance guide" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-wealth-blue mb-3">GST Compliance 101: Complete Guide for 2024</h3>
+                        <p class="text-wealth-slate mb-4">Everything you need to know about GST compliance, filing procedures, and avoiding common mistakes in Indian taxation.</p>
+                        <a href="#" class="text-wealth-gold font-semibold hover:text-wealth-amber">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- Successful business growth charts and graphs -->
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=250" alt="Business growth success" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-wealth-blue mb-3">Maximize Your Profits: Save ₹3L in Taxes</h3>
+                        <p class="text-wealth-slate mb-4">Strategic tax planning techniques that can help Indian businesses save significant amounts on their annual tax liability.</p>
+                        <a href="#" class="text-wealth-gold font-semibold hover:text-wealth-amber">Read More →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="bg-wealth-blue hover:bg-wealth-slate text-white px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center space-x-2 transition-colors">
+                    <span>Explore All Resources</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-wealth-blue">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Less hassle, More Growth.</h2>
+            <p class="text-xl text-wealth-yellow mb-8">Join Wealth Empires and start building your business empire today.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://api.whatsapp.com/send?phone=919884521264" class="bg-wealth-gold hover:bg-wealth-amber text-wealth-blue px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center justify-center space-x-2 transition-colors">
+                    <span>Get Free Consultation</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="tel:+919884521264" class="border-2 border-wealth-gold text-wealth-gold hover:bg-wealth-gold hover:text-wealth-blue px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    Call us: +91 9884521264
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-wealth-slate text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <div class="text-2xl font-bold">
+                        <span class="text-wealth-gold">Wealth</span> Empires
+                    </div>
+                    <p class="text-gray-300">Elevate your business with customized financial strategies designed for growth and success.</p>
+                    <div class="space-y-2">
+                        <p class="text-sm text-gray-300">
+                            <i class="fas fa-map-marker-alt text-wealth-gold mr-2"></i>
+                            Greenways Business Park, Chennai
+                        </p>
+                        <p class="text-sm text-gray-300">
+                            <i class="fas fa-clock text-wealth-gold mr-2"></i>
+                            9:00 AM - 6:00 PM
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-wealth-gold">Business Incorporation</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-wealth-gold">Accounting & Bookkeeping</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-wealth-gold">GST Compliance</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-wealth-gold">Trademark & Licensing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-300 hover:text-wealth-gold">About Us</a></li>
+                        <li><a href="#careers" class="text-gray-300 hover:text-wealth-gold">Careers</a></li>
+                        <li><a href="#partners" class="text-gray-300 hover:text-wealth-gold">Partners</a></li>
+                        <li><a href="#blogs" class="text-gray-300 hover:text-wealth-gold">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <div class="space-y-2">
+                        <a href="tel:+919884521264" class="text-gray-300 hover:text-wealth-gold block">
+                            <i class="fas fa-phone text-wealth-gold mr-2"></i>
+                            +91 9884521264
+                        </a>
+                        <a href="mailto:support@wealthempires.in" class="text-gray-300 hover:text-wealth-gold block">
+                            <i class="fas fa-envelope text-wealth-gold mr-2"></i>
+                            support@wealthempires.in
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=919884521264" class="text-gray-300 hover:text-wealth-gold block">
+                            <i class="fab fa-whatsapp text-wealth-gold mr-2"></i>
+                            WhatsApp Support
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-600 mt-12 pt-8 text-center">
+                <p class="text-gray-300">© 2024 Wealth Empires Private Limited | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://api.whatsapp.com/send?phone=919884521264" class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-colors">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Simple router for single-page navigation
+        (function() {
+            function smoothScroll(target) {
+                const element = document.querySelector(target);
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+
+            // Handle navigation clicks
+            document.addEventListener('click', function(e) {
+                const link = e.target.closest('a[href^="#"]');
+                if (link) {
+                    e.preventDefault();
+                    const target = link.getAttribute('href');
+                    smoothScroll(target);
+                }
+            });
+
+            // Animate counters when they come into view
+            const counters = document.querySelectorAll('.counter');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target.querySelector('.text-4xl, .text-5xl');
+                        const finalValue = counter.textContent.replace(/,/g, '');
+                        if (!isNaN(finalValue)) {
+                            animateCounter(counter, parseInt(finalValue));
+                        }
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+
+            counters.forEach(counter => observer.observe(counter));
+
+            function animateCounter(element, target) {
+                let current = 0;
+                const increment = target / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    element.textContent = Math.floor(current).toLocaleString();
+                }, 30);
+            }
+        })();
+    </script>
+</body>
+</html>

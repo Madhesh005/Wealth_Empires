@@ -118,73 +118,7 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Open Positions */}
-      <section className="py-20 bg-wealth-light-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-wealth-blue mb-4">
-              Open Positions
-            </h2>
-            <p className="text-xl text-wealth-slate">
-              Find your next opportunity with Wealth Empires
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {openPositions.map((position, index) => (
-              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-xl font-bold text-wealth-blue">
-                    {position.title}
-                  </CardTitle>
-                  <div className="space-y-2">
-                    <div className="flex items-center space-x-2 text-wealth-slate">
-                      <MapPin className="w-4 h-4 text-wealth-gold" />
-                      <span>{position.location}</span>
-                    </div>
-                    <div className="flex items-center space-x-2 text-wealth-slate">
-                      <Briefcase className="w-4 h-4 text-wealth-gold" />
-                      <span>{position.type}</span>
-                    </div>
-                    <div className="flex items-center space-x-2 text-wealth-slate">
-                      <Clock className="w-4 h-4 text-wealth-gold" />
-                      <span>{position.experience}</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-wealth-slate mb-6">
-                    {position.description}
-                  </CardDescription>
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-wealth-blue mb-3">Requirements:</h4>
-                    <ul className="space-y-1">
-                      {position.requirements.map((req, reqIndex) => (
-                        <li key={reqIndex} className="text-sm text-wealth-slate flex items-start space-x-2">
-                          <span className="w-1 h-1 bg-wealth-gold rounded-full mt-2 flex-shrink-0"></span>
-                          <span>{req}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <Button
-                    asChild
-                    className="w-full bg-wealth-gold hover:bg-wealth-amber text-white font-semibold"
-                  >
-                    <a
-                      href="mailto:support@wealthempires.in"
-                      className="inline-flex items-center justify-center space-x-2"
-                    >
-                      <span>Apply Now</span>
-                      <ArrowRight className="w-4 h-4" />
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Company Culture */}
       <section className="py-20 bg-white">
