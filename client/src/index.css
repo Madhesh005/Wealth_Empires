@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222, 84%, 4.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 4.9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 4.9%);
+  --primary: hsl(41, 89%, 48%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222, 84%, 4.9%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 13%, 45%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222, 84%, 4.9%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --ring: hsl(222, 84%, 4.9%);
+  --chart-1: hsl(41, 89%, 48%);
+  --chart-2: hsl(173, 58%, 39%);
+  --chart-3: hsl(197, 37%, 24%);
+  --chart-4: hsl(43, 74%, 66%);
+  --chart-5: hsl(27, 87%, 67%);
+  
+  /* Wealth Empires Custom Colors */
+  --wealth-yellow: hsl(46, 87%, 88%);
+  --wealth-gold: hsl(41, 89%, 48%);
+  --wealth-amber: hsl(32, 95%, 44%);
+  --wealth-blue: hsl(217, 33%, 17%);
+  --wealth-slate: hsl(215, 25%, 27%);
+  --wealth-cream: hsl(52, 100%, 96%);
+  --wealth-light-cream: hsl(49, 100%, 97%);
+  
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(222, 84%, 4.9%);
+  --foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 4.9%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --popover: hsl(222, 84%, 4.9%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --primary: hsl(41, 89%, 48%);
+  --primary-foreground: hsl(222, 84%, 4.9%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --accent: hsl(217, 32%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --ring: hsl(41, 89%, 48%);
+  --chart-1: hsl(41, 89%, 48%);
+  --chart-2: hsl(173, 58%, 39%);
+  --chart-3: hsl(197, 37%, 24%);
+  --chart-4: hsl(43, 74%, 66%);
+  --chart-5: hsl(27, 87%, 67%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(135deg, var(--wealth-cream) 0%, var(--wealth-yellow) 50%, var(--wealth-light-cream) 100%);
+  }
+  
+  .service-card {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .service-card:hover {
+    @apply -translate-y-1 shadow-xl;
+  }
+  
+  .nav-dropdown {
+    @apply opacity-0 invisible -translate-y-2 transition-all duration-300 ease-in-out;
+  }
+  
+  .nav-item:hover .nav-dropdown {
+    @apply opacity-100 visible translate-y-0;
+  }
+
+  .counter-animate {
+    @apply transition-all duration-75 ease-out;
+  }
+
+  .text-wealth-yellow {
+    color: var(--wealth-yellow);
+  }
+  
+  .text-wealth-gold {
+    color: var(--wealth-gold);
+  }
+  
+  .text-wealth-amber {
+    color: var(--wealth-amber);
+  }
+  
+  .text-wealth-blue {
+    color: var(--wealth-blue);
+  }
+  
+  .text-wealth-slate {
+    color: var(--wealth-slate);
+  }
+  
+  .text-wealth-cream {
+    color: var(--wealth-cream);
+  }
+  
+  .text-wealth-light-cream {
+    color: var(--wealth-light-cream);
+  }
+  
+  .bg-wealth-yellow {
+    background-color: var(--wealth-yellow);
+  }
+  
+  .bg-wealth-gold {
+    background-color: var(--wealth-gold);
+  }
+  
+  .bg-wealth-amber {
+    background-color: var(--wealth-amber);
+  }
+  
+  .bg-wealth-blue {
+    background-color: var(--wealth-blue);
+  }
+  
+  .bg-wealth-slate {
+    background-color: var(--wealth-slate);
+  }
+  
+  .bg-wealth-cream {
+    background-color: var(--wealth-cream);
+  }
+  
+  .bg-wealth-light-cream {
+    background-color: var(--wealth-light-cream);
+  }
+  
+  .border-wealth-gold {
+    border-color: var(--wealth-gold);
+  }
+  
+  .border-wealth-blue {
+    border-color: var(--wealth-blue);
+  }
+  
+  .hover\:bg-wealth-amber:hover {
+    background-color: var(--wealth-amber);
+  }
+  
+  .hover\:bg-wealth-slate:hover {
+    background-color: var(--wealth-slate);
+  }
+  
+  .hover\:text-wealth-gold:hover {
+    color: var(--wealth-gold);
+  }
+  
+  .hover\:text-wealth-amber:hover {
+    color: var(--wealth-amber);
+  }
+  
+  .hover\:border-wealth-gold:hover {
+    border-color: var(--wealth-gold);
+  }
+}
